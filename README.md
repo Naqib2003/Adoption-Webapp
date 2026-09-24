@@ -21,17 +21,17 @@ Built for the CSE370 Project.
 ### Core Navigation & Access
 | Landing Page | Login Portal |
 | :---: | :---: |
-| ![Landing Page](./project-screenshots/landing-page.png) <br> *A welcoming UI for families and donors.* | ![Login Page](./project-screenshots/login-page.png) <br> *Secure access for all user roles.* |
+| ![Landing Page](./landing-page.png) <br> *A welcoming UI for families and donors.* | ![Login Page](./login-page.png) <br> *Secure access for all user roles.* |
 
 ### User Dashboards
 | Adopter Page | Guardian Page |
 | :---: | :---: |
-| ![Adopter View](./project-screenshots/adopter-page.png) <br> *Dashboard for prospective families.* | ![Guardian View](./project-screenshots/Guardian-page.png) <br> *Management portal for current guardians.* |
+| ![Adopter View](./adopter-page.png) <br> *Dashboard for prospective families.* | ![Guardian View](./Guardian-page.png) <br> *Management portal for current guardians.* |
 
 ### Administrative & Legal Verification
 | Moderator Page | Lawyer Page | Police Page |
 | :---: | :---: | :---: |
-| ![Moderator View](./project-screenshots/moderator-page.png) <br> *Platform moderation and tracking.* | ![Lawyer View](./project-screenshots/Lawyer-page.png) <br> *Legal review and application processing.* | ![Police View](./project-screenshots/police-page.png) <br> *Background checks and clearance.* |
+| ![Moderator View](./moderator-page.png) <br> *Platform moderation and tracking.* | ![Lawyer View](./Lawyer-page.png) <br> *Legal review and application processing.* | ![Police View](./police-page.png) <br> *Background checks and clearance.* |
 
 ---
 
