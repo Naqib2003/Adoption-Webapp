@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Log In</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card">
+      <h1>Log In</h1>
+      <p class="subtitle">Enter your username and password — we'll detect your account type automatically.</p>
+
+      <form id="loginForm">
+        <label>Username</label>
+        <input type="text" id="username" required>
+
+        <label>Password</label>
+        <input type="password" id="password" required>
+
+        <button type="submit">Log In</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <div class="links">
+        Don't have an account? <a href="/register.html">Register</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>

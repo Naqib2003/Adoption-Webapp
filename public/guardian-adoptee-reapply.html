@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Edit & Resubmit</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card">
+      <h1>Edit & Resubmit</h1>
+      <p class="subtitle">This enlistment was rejected. Correct the details below and resubmit it for a fresh review — this updates the existing record rather than creating a new one.</p>
+
+      <form id="reapplyForm">
+        <label>Type</label>
+        <select id="adoptee_type" required>
+          <option value="">Select...</option>
+          <option value="child">Child</option>
+          <option value="elderly">Elderly</option>
+        </select>
+
+        <label>Name</label>
+        <input type="text" id="name" required>
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob" required>
+
+        <label>Gender</label>
+        <select id="gender" required>
+          <option value="">Select...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Religion</label>
+        <input type="text" id="religion" required>
+
+        <label id="professionLabel">Profession</label>
+        <input type="text" id="profession">
+
+        <label>Email (optional)</label>
+        <input type="email" id="email">
+
+        <label>House No.</label>
+        <input type="text" id="house_no" required>
+
+        <label>Street</label>
+        <input type="text" id="street" required>
+
+        <label>Zip Code</label>
+        <input type="text" id="zipcode">
+
+        <label>City/Village</label>
+        <input type="text" id="city_village" required>
+
+        <label>District</label>
+        <input type="text" id="district" required>
+
+        <div id="elderlyFields" style="display:none;">
+          <label>NID No.</label>
+          <input type="text" id="nid_no">
+          <label>Phone</label>
+          <input type="text" id="phone">
+          <label>Previous Medical Record (if any)</label>
+          <input type="text" id="prev_med_record">
+          <label>Profession History</label>
+          <input type="text" id="profession_history">
+        </div>
+
+        <div id="childFields" style="display:none;">
+          <label>Birth Certificate No.</label>
+          <input type="text" id="birth_cert">
+          <label>Special Needs (if any)</label>
+          <input type="text" id="special_needs">
+        </div>
+
+        <button type="submit">Resubmit for Verification</button>
+      </form>
+
+      <div id="message" class="message"></div>
+      <div class="links"><a href="/guardian-pending-enlistment.html">&larr; Back to Pending Enlistment</a></div>
+    </div>
+  </div>
+  <script src="/js/guardian-dashboard-nav.js"></script>
+  <script src="/js/guardian-guard.js"></script>
+  <script src="/js/guardian-adoptee-reapply.js"></script>
+</body>
+</html>

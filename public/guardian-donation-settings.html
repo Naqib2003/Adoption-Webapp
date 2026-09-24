@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Donation Settings</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card" style="max-width:600px;">
+      <h1 id="pageName">Donation Settings</h1>
+
+      <div id="lockedNotice" style="display:none;" class="message error">
+        This adoptee has already been successfully adopted — donation settings can no longer be changed.
+      </div>
+
+      <form id="settingsForm">
+        <label style="display:flex; align-items:center; gap:8px; margin-top:16px;">
+          <input type="checkbox" id="allow_donation" style="width:auto;">
+          Allow Donations for This Adoptee?
+        </label>
+
+        <div id="typeFields" style="display:none;">
+          <label style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" id="money_enabled" style="width:auto;"> Money
+          </label>
+
+          <div id="goalField">
+            <label>Fundraising Goal (optional)</label>
+            <input type="number" id="goal_amount" min="0" placeholder="e.g. 50000">
+          </div>
+
+          <label style="display:flex; align-items:center; gap:8px;">
+            <input type="checkbox" id="need_based_enabled" style="width:auto;"> Need-Based
+          </label>
+
+          <div id="reasonField">
+            <label>Reason / short background (shown on the public donation page)</label>
+            <input type="text" id="reason">
+          </div>
+        </div>
+
+        <button type="submit">Save Settings</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <div id="wishlistSection" style="display:none; margin-top:32px;">
+        <h3 style="font-size:16px;">Need-Based Wishlist Requests</h3>
+        <form id="wishlistForm" style="display:flex; gap:10px; margin-top:10px;">
+          <input type="text" id="wishlistDescription" placeholder="e.g. Needs a school board and books" style="flex:1;">
+          <button type="submit" style="width:auto; margin-top:0; padding:10px 16px;">Add</button>
+        </form>
+        <div id="wishlistList" style="margin-top:16px;"></div>
+      </div>
+
+      <div class="links"><a href="#" id="backLink">&larr; Back</a></div>
+    </div>
+  </div>
+  <script src="/js/guardian-dashboard-nav.js"></script>
+  <script src="/js/guardian-guard.js"></script>
+  <script src="/js/guardian-donation-settings.js"></script>
+</body>
+</html>

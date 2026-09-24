@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Matching Preferences</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card">
+      <h1>Matching Preferences</h1>
+      <p class="subtitle">These help us calculate a compatibility score when you browse adoptees.</p>
+
+      <form id="prefsForm">
+        <label>Preferred Age Range</label>
+        <div style="display:flex; gap:10px;">
+          <input type="number" id="preferred_age_min" placeholder="Min age">
+          <input type="number" id="preferred_age_max" placeholder="Max age">
+        </div>
+
+        <label>Preferred Gender</label>
+        <select id="preferred_gender">
+          <option value="any">No preference</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Preferred Religion</label>
+        <input type="text" id="preferred_religion" placeholder="e.g. Islam, Hindu, Christian (leave blank for no preference)">
+
+        <label style="display:flex; align-items:center; gap:8px; margin-top:16px;">
+          <input type="checkbox" id="open_to_special_needs" style="width:auto;">
+          I'm open to adoptees with special needs or medical history
+        </label>
+
+        <button type="submit">Save Preferences</button>
+      </form>
+
+      <div id="message" class="message"></div>
+      <div class="links"><a href="/profile.html">&larr; Back to Profile</a></div>
+    </div>
+  </div>
+  <script src="/js/adopter-nav.js"></script>
+  <script src="/js/adopter-preferences.js"></script>
+</body>
+</html>

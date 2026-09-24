@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Guardian Profile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+  <div class="card">
+    <h1>My Profile — Legal Guardian</h1>
+    <p class="subtitle">
+      Verification status: <span id="statusBadge" class="status-badge">Loading...</span>
+    </p>
+    <div id="profileView"></div>
+    <div id="message" class="message"></div>
+    <button id="logoutBtn" style="background:#b3261e; margin-top:24px;">Log Out</button>
+    <div class="links" id="notLoggedIn" style="display:none;">
+      Not logged in. <a href="/login.html">Log in</a>
+    </div>
+  </div>
+  </div>
+
+  <script src="/js/guardian-profile-nav.js"></script>
+  <script src="/js/guardian-profile.js"></script>
+</body>
+</html>

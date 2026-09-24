@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Assign Lawyer</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card" style="max-width:720px;">
+      <h1>Assign Lawyer</h1>
+      <p class="subtitle" id="contextLine">Pick an adoptee case first.</p>
+
+      <div id="pickerSection" style="display:none;">
+        <label>Adoptee Case</label>
+        <select id="caseSelect"></select>
+      </div>
+
+      <h3 style="color:#6b7a72; font-size:14px; margin-top:24px;">Free Lawyers</h3>
+      <div id="list"></div>
+      <div id="message" class="message"></div>
+    </div>
+  </div>
+  <script src="/js/moderator-nav.js"></script>
+  <script src="/js/moderator-guard.js"></script>
+  <script src="/js/moderator-assign-lawyer.js"></script>
+</body>
+</html>

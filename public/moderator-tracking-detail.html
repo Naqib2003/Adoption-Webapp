@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Tracking Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card" style="max-width:640px;">
+      <h1 id="pageName">Loading...</h1>
+      <div id="details"></div>
+
+      <h3 style="font-size:14px; color:#6b7a72; margin-top:24px;">Arrange a Check-In Meeting</h3>
+      <form id="arrangeForm">
+        <label>Meeting Date</label>
+        <input type="date" id="meeting_date">
+        <label>Meeting Time</label>
+        <input type="time" id="meeting_time">
+        <button type="submit">Arrange Meeting</button>
+      </form>
+
+      <h3 style="font-size:14px; color:#6b7a72; margin-top:24px;">Meeting History & Guardian Reports</h3>
+      <div id="meetingsList"></div>
+
+      <div id="message" class="message"></div>
+      <div class="links"><a href="/moderator-tracking.html">&larr; Back to list</a></div>
+    </div>
+  </div>
+  <script src="/js/moderator-nav.js"></script>
+  <script src="/js/moderator-guard.js"></script>
+  <script src="/js/moderator-tracking-detail.js"></script>
+</body>
+</html>

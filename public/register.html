@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card">
+      <h1>Register</h1>
+      <p class="subtitle">Select your account type, then fill in the rest.</p>
+
+      <form id="registerForm">
+        <label>Account Type</label>
+        <select id="account_type" required>
+          <option value="">Select...</option>
+          <option value="adopter">Adopter (Family)</option>
+          <option value="legalGuardian">Legal Guardian</option>
+          <option value="legalEntity">Legal Entity</option>
+        </select>
+
+        <div id="entityTypeField" style="display:none;">
+          <label>Entity Type</label>
+          <select id="entity_type">
+            <option value="">Select...</option>
+            <option value="police">Police</option>
+            <option value="lawyer">Lawyer</option>
+          </select>
+        </div>
+
+        <label>Username</label>
+        <input type="text" id="username" required>
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>NID No.</label>
+        <input type="text" id="nid_no" required>
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob" required>
+
+        <label>Gender</label>
+        <select id="gender" required>
+          <option value="">Select...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Phone</label>
+        <input type="text" id="phone" required>
+
+        <label>Email</label>
+        <input type="email" id="email" required>
+
+        <label>Password</label>
+        <input type="password" id="password" required minlength="6">
+
+        <div id="adopterGuardianFields" style="display:none;">
+          <label>Religion</label>
+          <input type="text" id="religion">
+
+          <label>Profession</label>
+          <input type="text" id="profession">
+
+          <label>House No.</label>
+          <input type="text" id="house_no">
+
+          <label>Street</label>
+          <input type="text" id="street">
+
+          <label>Zip Code</label>
+          <input type="text" id="zipcode">
+
+          <label>City/Village</label>
+          <input type="text" id="city_village">
+
+          <label>District</label>
+          <input type="text" id="district">
+        </div>
+
+        <div id="spouseSection" style="display:none;">
+          <label style="display:flex; align-items:center; gap:8px; margin-top:16px;">
+            <input type="checkbox" id="has_spouse" style="width:auto;">
+            Add spouse information (optional)
+          </label>
+
+          <div id="spouseFields" style="display:none;">
+            <label>Spouse Full Name</label>
+            <input type="text" id="s_name">
+
+            <label>Spouse NID No.</label>
+            <input type="text" id="s_nid">
+
+            <label>Spouse Date of Birth</label>
+            <input type="date" id="s_dob">
+
+            <label>Spouse Phone</label>
+            <input type="text" id="s_phone">
+
+            <label>Spouse Gender</label>
+            <select id="s_gender">
+              <option value="">Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label>Spouse Religion</label>
+            <input type="text" id="s_religion">
+
+            <label>Spouse Profession</label>
+            <input type="text" id="s_profession">
+          </div>
+        </div>
+
+        <div id="priorExperienceSection" style="display:none;">
+          <label>Previous experience of adopting someone?</label>
+          <div style="display:flex; gap:20px; margin-top:6px;">
+            <label style="display:flex; align-items:center; gap:6px;">
+              <input type="radio" name="has_prior_adoption_experience" value="yes" style="width:auto;"> Yes
+            </label>
+            <label style="display:flex; align-items:center; gap:6px;">
+              <input type="radio" name="has_prior_adoption_experience" value="no" style="width:auto;" checked> No
+            </label>
+          </div>
+
+          <div id="priorExperienceDescriptionField" style="display:none;">
+            <label>Please describe your previous adoption experience</label>
+            <input type="text" id="prior_adoption_experience_description">
+          </div>
+        </div>
+
+        <div id="badgeField" style="display:none;">
+          <label>Badge No.</label>
+          <input type="text" id="badge_no">
+        </div>
+
+        <div id="licenseField" style="display:none;">
+          <label>License No.</label>
+          <input type="text" id="license_no">
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+
+      <div id="message" class="message"></div>
+
+      <div class="links">
+        Already have an account? <a href="/login.html">Log in</a>
+      </div>
+    </div>
+  </div>
+  <script src="/js/nav.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, Arial, sans-serif;
+  background: #f4f6f5;
+  color: #1e2a24;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav {
+  background: #1e2a24;
+  padding: 14px 24px;
+}
+
+.nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-brand {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: #cfe3d6;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: white;
+}
+
+/* Step tracker — used by the Adopter's Application Tracker */
+.tracker-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tracker-card h3 {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+}
+
+.step-tracker {
+  display: flex;
+  align-items: flex-start;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #e5e5e5;
+  z-index: 0;
+}
+
+.step.step-done:not(:last-child)::after {
+  background: #2f6b4f;
+}
+
+.step-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px auto;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.step-done .step-circle { background: #2f6b4f; color: white; }
+.step-current .step-circle { background: white; border: 3px solid #2f6b4f; color: #2f6b4f; }
+.step-future .step-circle { background: #e5e5e5; color: #999; }
+.step-failed .step-circle { background: #b3261e; color: white; }
+
+.step-label {
+  font-size: 11px;
+  color: #6b7a72;
+}
+
+.step-current .step-label { color: #1e2a24; font-weight: 600; }
+.step-failed .step-label { color: #b3261e; font-weight: 600; }
+
+/* Donation goal progress bar — deliberately just a plain fill bar,
+   no step circles, unlike the Application Tracker above */
+.progress-bar {
+  background: #e5e5e5;
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  background: #2f6b4f;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.progress-label {
+  font-size: 12px;
+  color: #6b7a72;
+  margin-top: 4px;
+}
+
+.page-content {
+  padding: 40px 20px;
+}
+
+.card {
+  max-width: 480px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: #6b7a72;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 14px;
+  margin-bottom: 4px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d7ddda;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 12px;
+  background: #2f6b4f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover { background: #26593f; }
+
+.message {
+  margin-top: 16px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: none;
+}
+
+.message.error {
+  background: #fdecec;
+  color: #b3261e;
+  display: block;
+}
+
+.message.success {
+  background: #eaf6ee;
+  color: #1c6b3a;
+  display: block;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending { background: #fff4e0; color: #a15c00; }
+.status-verified { background: #eaf6ee; color: #1c6b3a; }
+.status-rejected { background: #fdecec; color: #b3261e; }
+
+.links {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+a { color: #2f6b4f; }
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.profile-row span:first-child { color: #6b7a72; }

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EvergreenBonds — Applicant Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header id="siteHeader"></header>
+  <div class="page-content">
+    <div class="card" style="max-width:600px;">
+      <h1 id="pageName">Loading...</h1>
+      <p class="subtitle" id="contextLine"></p>
+
+      <div id="reportBox" style="display:none; background:#fff4e0; border:2px solid #e0a83c; border-radius:8px; padding:14px; margin-bottom:16px;">
+        <strong style="color:#a15c00;">Police Verification Report</strong>
+        <p id="reportText" style="margin:8px 0 0 0; color:#1e2a24;"></p>
+      </div>
+
+      <div id="details"></div>
+
+      <h3 id="spouseHeading" style="display:none; font-size:14px; color:#6b7a72; margin-top:20px;">Spouse Information</h3>
+      <div id="spouseDetails"></div>
+
+      <div id="actions" style="display:flex; gap:10px; margin-top:20px;"></div>
+      <div id="message" class="message"></div>
+      <div class="links"><a href="/guardian-new-request.html">&larr; Back to requests</a></div>
+    </div>
+  </div>
+  <script src="/js/guardian-dashboard-nav.js"></script>
+  <script src="/js/guardian-guard.js"></script>
+  <script src="/js/guardian-applicant-detail.js"></script>
+</body>
+</html>
